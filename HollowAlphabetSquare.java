@@ -23,6 +23,6 @@ public class HollowAlphabetSquare {
                 }
             }
             System.out.println();
-        }
+        }sc.close();
     }
 }
