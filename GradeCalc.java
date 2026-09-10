@@ -17,6 +17,7 @@ public class GradeCalc {
         System.out.println("Enter Your Marks in Subject 5: ");
         int marks5 = Integer.parseInt(br.readLine());
         int totalMarks = marks + marks2 + marks3 + marks4 + marks5;
+
         System.out.println("Total Marks : " + totalMarks);
         double average = totalMarks / 5.0;
         System.out.println("Average: " + average);
