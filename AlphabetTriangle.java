@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.*;
 public class AlphabetTriangle {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

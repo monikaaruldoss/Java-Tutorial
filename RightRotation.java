@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
-public class LeftRotation {
+public class RightRotation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
@@ -11,15 +11,16 @@ public class LeftRotation {
             arr[i] = scanner.nextInt();
         }
         System.out.println("Original Array :"+ Arrays.toString(arr));
-        leftRotate(arr, size);
+        rightRotate(arr, size);
         System.out.print("Left Rotated Array :"+Arrays.toString(arr));
         scanner.close();
     }
-    public static void leftRotate(int[] arr, int size) {
-        int first = arr[0];
-        for(int i = 0;i < size - 1; i++){
-            arr[i] = arr[i+1];
+    public static void rightRotate(int[] arr, int size) {
+        int last = arr[arr.length - 1];
+        for(int i = size - 1;i > 0; i--){
+            arr[i] = arr[i-1];
         }
-        arr[arr.length - 1] = first;
+        arr[0] = last;
     }
 }
+

@@ -6,7 +6,7 @@ public class Anagram {
         String s = br.readLine();
         System.out.println("Enter Second String :");
         String t = br.readLine();
-        System.out.println("The given strins are anagrams : " + AnagramMethod(s, t));
+        System.out.println("The given strings are anagrams : " + AnagramMethod(s, t));
     }
     public static boolean AnagramMethod(String s, String t) {
         if (s.length() != t.length()) {
