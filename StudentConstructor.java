@@ -2,7 +2,7 @@ class Student {
     String name;
     int age;
     Student(){
-        this.name = "Kumar";
+        this.name = "Jason";
         this.age = 20;
     }
     void display(){
