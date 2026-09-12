@@ -26,17 +26,20 @@ class Student{
 }
 public class StudentRegistration{
     public static void main(String[] args){
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Student ID :");
         int studentId = sc.nextInt();
+        sc.nextLine();
         System.out.println("Enter Student Name :");
         String studentName = sc.next();
         System.out.println("Enter Student Course Count :");
         int courseCount = sc.nextInt();
+sc.nextLine();
         System.out.println("Enter Student Courses :");
         Student s1 = new Student(studentId, studentName, courseCount);
         for(int i = 0; i < courseCount; i++){
-            String courses = sc.next();
+            String courses = sc.nextLine();
             s1.RegisteredCourses(courses);
         }
         s1.display(); 
