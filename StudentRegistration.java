@@ -3,17 +3,16 @@ class Student{
     private int studentId;
     private String studentName;
     private int courseCount;
-    private String []Courses;
-    void Student(int studentId, String studentName, int countCourses){
+    private String []courses;
+    Student(int studentId, String studentName, int countCourses){
         this.studentId = studentId;
         this.studentName = studentName;
-        this.courseCount = countCourses;
-        Courses = new String[courseCount];
+        courses = new String[countCourses];
+        courseCount = 0;
     }
-    void RegisteredCourses(String []courses){
-        for(int i = 0; i < courseCount; i++){
-            Courses[i] = courses[i];
-        }
+    void RegisteredCourses(String course){
+            courses[courseCount] = course;
+            courseCount++;
     }
     void display(){
         System.out.println("Student ID: " + studentId); 
@@ -21,11 +20,11 @@ class Student{
         System.out.println("Student Course Count :" + courseCount);
         System.out.println("Student Courses :");
         for(int i = 0; i < courseCount; i++){
-            System.out.println(Courses[i]);
+            System.out.println(courses[i]);
         }
     }
 }
-public class StudentRegisteration{
+public class StudentRegistration{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Student ID :");
@@ -35,12 +34,12 @@ public class StudentRegisteration{
         System.out.println("Enter Student Course Count :");
         int courseCount = sc.nextInt();
         System.out.println("Enter Student Courses :");
-        String []courses = new String[courseCount];
-        for(int i = 0; i < courseCount; i++){
-            courses[i] = sc.next();
-        }
         Student s1 = new Student(studentId, studentName, courseCount);
-        s1.RegisteredCourses(courses);
-        s1.display();   
+        for(int i = 0; i < courseCount; i++){
+            String courses = sc.next();
+            s1.RegisteredCourses(courses);
+        }
+        s1.display(); 
+        sc.close();  
     }
 }
