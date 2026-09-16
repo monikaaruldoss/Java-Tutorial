@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+public class ArrayListEx {
+    public static void main(String[] args){
+        ArrayList <Integer> scores = new ArrayList<>();
+        scores.add(20);
+        scores.add(30);
+        scores.add(40);
+        scores.add(50);
+        int top_score = scores.get(3);
+        scores.set(2,95);
+        scores.remove(0);
+        int totalElements = scores.size();
+        for (int score : scores){
+            System.out.println("Score : " + score);
+        }
+    }
+}
