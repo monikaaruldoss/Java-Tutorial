@@ -28,7 +28,7 @@ public class LoopStatements {
         //Labeled For Loop
         outerLoop:
         for (int m = 1; m <= 3; m++) {
-            innerLoop:
+            //innerLoop:
             for (int n = 1; n <= 3; n++) {
                 if (m == 2 && n == 2) {
                     break outerLoop; // Breaks out of the outer loop

@@ -18,6 +18,5 @@ public class HollowSquare {
             }
             System.out.println();
         }
-        scanner.close();
     }
 }

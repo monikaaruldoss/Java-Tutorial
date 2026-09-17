@@ -5,6 +5,7 @@ public class HollowAlphabetSquare {
         System.out.println("--- Hollow Alphabet Square ---");
         System.out.print("Enter the size of the square: ");
         int size = sc.nextInt();
+        sc.close();
         if(size <= 0) {
             System.out.println("Size should be at least 2 to form a hollow square.");
             return;
@@ -23,6 +24,6 @@ public class HollowAlphabetSquare {
                 }
             }
             System.out.println();
-        }sc.close();
+        }
     }
 }

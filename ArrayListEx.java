@@ -6,10 +6,8 @@ public class ArrayListEx {
         scores.add(30);
         scores.add(40);
         scores.add(50);
-        int top_score = scores.get(3);
         scores.set(2,95);
         scores.remove(0);
-        int totalElements = scores.size();
         for (int score : scores){
             System.out.println("Score : " + score);
         }

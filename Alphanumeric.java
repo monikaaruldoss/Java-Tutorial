@@ -21,6 +21,6 @@ public class Alphanumeric {
         System.out.println("Total Alphabets :"+ a);
         System.out.println("Total Digits : "+ d);
         System.out.println("Total Symbols");
-    
+     sc.close();
     }
 }

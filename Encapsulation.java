@@ -1,4 +1,4 @@
-class Student{
+class Student1{
     private String name;
     private int age;
     public void setName(String name){
@@ -16,7 +16,7 @@ class Student{
 }
 public class Encapsulation {
     public static void main(String [] args){
-        Student s = new Student();
+        Student1 s = new Student1();
         s.setName("Moni");
         s.setAge(20);
 

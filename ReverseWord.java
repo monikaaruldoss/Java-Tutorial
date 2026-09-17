@@ -11,5 +11,6 @@ public class ReverseWord {
         }
         System.out.println(s);
         System.out.println(r);
+        sc.close();
     }
 }

@@ -38,7 +38,7 @@ public class AlphaVowelNumeric {
         System.out.println("Total Digits : "+ d);
         System.out.println("Total Vowels : "+ v);
         System.out.println("Total Symbols : "+ s);
-    
+        sc.close();;
     }
 }
 

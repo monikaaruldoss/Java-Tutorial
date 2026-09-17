@@ -16,5 +16,6 @@ public class ReverseEachWord {
                 FinalResult.append(" ");
             }
         }System.out.println("Reversed Sentence : "+FinalResult);
+        sc.close();
     }
 }
